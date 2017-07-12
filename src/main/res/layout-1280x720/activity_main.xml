@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cleartv.exrate.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_centerInParent="true"
+        android:layout_width="1000px"
+        android:layout_height="516.7px"
+        android:background="@mipmap/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:paddingTop="24px"
+            android:paddingRight="13.3px"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="173.3px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="1px"
+                    android:gravity="right|bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="21px"
+                        android:gravity="right|center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/cny"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32px"
+                            android:layout_marginLeft="13.3px"
+                            android:gravity="center_vertical"
+                            android:textSize="22px"
+                            android:textColor="#fff"
+                            android:text="@string/RMB"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32px"
+                        android:gravity="center_vertical"
+                        android:textSize="22px"
+                        android:layout_marginBottom="12px"
+                        android:textColor="#fff"
+                        android:text="@string/exchange"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="1px"
+                    android:gravity="right|bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="21px"
+                        android:gravity="right|center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/cny"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="32px"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="13.3px"
+                            android:textSize="22px"
+                            android:textColor="#fff"
+                            android:text="@string/RMB"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32px"
+                        android:gravity="center_vertical"
+                        android:textSize="22px"
+                        android:layout_marginBottom="12px"
+                        android:textColor="#fff"
+                        android:text="@string/exchange"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="8"
+                android:listSelector="@android:color/transparent"
+                android:columnWidth="100.6px">
+
+            </GridView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="1px"
+            android:layout_width="match_parent"
+            android:layout_height="47px"
+            android:gravity="center_vertical"
+            android:textSize="22px"
+            android:textColor="#fff"
+            android:text="@string/info"
+            android:layout_marginLeft="30px"/>
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="100.6px"
+            android:layout_height="53px"
+            android:text="@string/back"
+            android:textSize="18px"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="40px"
+        android:layout_alignLeft="@id/ll_content"
+        android:layout_above="@id/ll_content"
+        android:text="@string/app_name"/>
+
+</RelativeLayout>

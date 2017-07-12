@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Currency Exchange Rate</string>
+    <string name="info">Currency exchange rates are for informational purposes only.</string>
+    <string name="back">Back</string>
+    <string name="exchange">Exchange:</string>
+    <string name="RMB">1 RMB=</string>
+</resources>

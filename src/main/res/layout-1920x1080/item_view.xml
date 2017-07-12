@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="59px"
+        android:layout_height="41px"
+        android:layout_marginTop="18px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/cny" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="48px"
+        android:layout_gravity="center"
+        android:layout_marginTop="10px"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/toRMB"
+        android:layout_width="wrap_content"
+        android:layout_height="48px"
+        android:layout_gravity="center"
+        android:layout_marginTop="32px"
+        android:textColor="#fff"
+        android:textSize="34px" />
+
+    <TextView
+        android:id="@+id/fromRMB"
+        android:layout_width="wrap_content"
+        android:layout_height="48px"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15px"
+        android:layout_marginTop="33px"
+        android:textColor="#fff"
+        android:textSize="34px" />
+
+
+</LinearLayout>

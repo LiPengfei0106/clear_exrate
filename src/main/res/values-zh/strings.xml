@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">货币汇率</string>
+    <string name="info">货币汇率消息仅供参考，请与酒店前台确认实时汇率信息。</string>
+    <string name="back">返回</string>
+    <string name="exchange">兑换：</string>
+    <string name="RMB">1人民币=</string>
+</resources>

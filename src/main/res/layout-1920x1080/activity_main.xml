@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cleartv.exrate.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_centerInParent="true"
+        android:layout_width="1500px"
+        android:layout_height="775px"
+        android:background="@mipmap/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:paddingTop="36px"
+            android:paddingRight="20px"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="260px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="1px"
+                    android:gravity="right|bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="33px"
+                        android:gravity="right|center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/cny"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48px"
+                            android:layout_marginLeft="20px"
+                            android:gravity="center_vertical"
+                            android:textSize="34px"
+                            android:textColor="#fff"
+                            android:text="@string/RMB"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48px"
+                        android:gravity="center_vertical"
+                        android:textSize="34px"
+                        android:layout_marginBottom="15px"
+                        android:textColor="#fff"
+                        android:text="@string/exchange"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="1px"
+                    android:gravity="right|bottom">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="33px"
+                        android:gravity="right|center_vertical"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/cny"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="48px"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="20px"
+                            android:textSize="34px"
+                            android:textColor="#fff"
+                            android:text="@string/RMB"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="48px"
+                        android:gravity="center_vertical"
+                        android:textSize="34px"
+                        android:layout_marginBottom="15px"
+                        android:textColor="#fff"
+                        android:text="@string/exchange"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="8"
+                android:listSelector="@android:color/transparent"
+                android:columnWidth="152px">
+
+            </GridView>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="1px"
+            android:layout_width="match_parent"
+            android:layout_height="71px"
+            android:gravity="center_vertical"
+            android:textSize="34px"
+            android:textColor="#fff"
+            android:text="@string/info"
+            android:layout_marginLeft="45px"/>
+
+        <TextView
+            android:layout_gravity="right"
+            android:layout_width="152px"
+            android:layout_height="80px"
+            android:text="@string/back"
+            android:textSize="28px"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="60px"
+        android:layout_alignLeft="@id/ll_content"
+        android:layout_above="@id/ll_content"
+        android:text="@string/app_name"/>
+
+</RelativeLayout>
